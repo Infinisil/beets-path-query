@@ -1,0 +1,10 @@
+#!/bin/sh
+
+DBFILE=$(dirname $0)/beets.db
+
+set -x
+
+beet -l $DBFILE ls -f '$id - $path'
+
+beet -l $DBFILE ls path:"/home/infinisil/music/data/Non-Album/Savant/Slasher.mp3"
+beet -l $DBFILE ls path:"/home/infinisil/music/data/Non-Album/Wolfgang Amadeus Mozart/Koncert A dur pro klarinet a orchestr K 622.opus"
